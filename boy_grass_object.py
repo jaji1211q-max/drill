@@ -40,6 +40,8 @@ class Zombie:
         self.frame = (self.frame + 1) % 10
         self.x += 3
 
+class ball:
+    pass
 
 def reset_world():
     global world
@@ -52,6 +54,8 @@ def reset_world():
     world += team
     muri = [Zombie() for a in range(5)]
     world += muri
+    army = [ball() for b in range(20)]
+    world += army
 
 
 
