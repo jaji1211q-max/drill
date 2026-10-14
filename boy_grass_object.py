@@ -44,9 +44,10 @@ class ball:
     def __init__(self):
             self.image =load_image('ball41x41.png')
             self.x, self.y = random.randint(50,750),90
+            self.size = random.randint(10,40)
             
     def draw(self):
-        self.image.draw(self.x,self.y,20,20)
+        self.image.draw(self.x,self.y)
 
     def update(self):
         if(self.y > 570 and self.y < 600):
