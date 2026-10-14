@@ -47,7 +47,7 @@ class ball:
             self.size = random.randint(10,40)
             
     def draw(self):
-        self.image.draw(self.x,self.y)
+        self.image.draw(self.x,self.y,self.size,self.size)
 
     def update(self):
         if(self.y > 570 and self.y < 600):
