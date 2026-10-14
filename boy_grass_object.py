@@ -49,8 +49,10 @@ class ball:
         self.image.draw(self.x,self.y)
 
     def update(self):
-        while self.y < 770:
-            self.y += random.randint(1,10)
+        if(self.y > 570 and self.y < 600):
+            pass
+        else:
+            self.y += random.randint(0,10)
 
 
 def reset_world():
