@@ -44,11 +44,13 @@ class ball:
     def __init__(self):
             self.image =load_image('ball41x41.png')
             self.x, self.y = random.randint(50,750),90
+            
     def draw(self):
         self.image.draw(self.x,self.y)
 
     def update(self):
-        self.y += random.randint(1,10)
+        while self.y < 770:
+            self.y += random.randint(1,10)
 
 
 def reset_world():
