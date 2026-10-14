@@ -50,7 +50,7 @@ class ball:
 
     def update(self):
         if(self.y > 570 and self.y < 600):
-            pass
+            self.y -= random.randint(0,20)
         else:
             self.y += random.randint(0,10)
 
