@@ -48,7 +48,9 @@ class ball:
         self.image.draw(self.x,self.y)
 
     def update(self):
-        self.y +=5 
+        self.y += random.randint(1,10)
+
+
 def reset_world():
     global world
     global running
