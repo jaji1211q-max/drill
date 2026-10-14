@@ -41,7 +41,9 @@ class Zombie:
         self.x += 3
 
 class ball:
-    pass
+    def __init__(self):
+            self.image =load_image('ball21x21.png')
+            self.x, self.y = random.randint(50,750),90
 
 def reset_world():
     global world
