@@ -44,7 +44,7 @@ class ball:
     def __init__(self):
             self.image =load_image('ball41x41.png')
             self.x, self.y = random.randint(50,750),90
-            self.size = random.randint(10,40)
+            self.size = random.randint(20,70)
             
     def draw(self):
         self.image.draw(self.x,self.y,self.size,self.size)
@@ -53,7 +53,7 @@ class ball:
         if(self.y > 570 and self.y < 600):
             self.y -= random.randint(0,20)
         else:
-            self.y += random.randint(0,10)
+            self.y += random.randint(1,20)
 
 
 def reset_world():
